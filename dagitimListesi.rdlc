@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSet1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>f3f3c5c3-4c61-42f4-97e8-cd23bb50632e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSet1</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="KoyAdi">
+          <DataField>KoyAdi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MuhtarAdi">
+          <DataField>MuhtarAdi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MuhtarCepTel">
+          <DataField>MuhtarCepTel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YardimciTel">
+          <DataField>YardimciTel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YardimciAdi">
+          <DataField>YardimciAdi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KisiAd">
+          <DataField>KisiAd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KisiSoyAd">
+          <DataField>KisiSoyAd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DogumTarihi">
+          <DataField>DogumTarihi</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BolgeAdi">
+          <DataField>BolgeAdi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BolgeSorumlusu">
+          <DataField>BolgeSorumlusu</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BolgeYardımcısı">
+          <DataField>BolgeYardımcısı</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KoyNo">
+          <DataField>KoyNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Hastalik">
+          <DataField>Hastalik</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TcNo">
+          <DataField>TcNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KisiNo">
+          <DataField>KisiNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BolgeNo">
+          <DataField>BolgeNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EkBilgi">
+          <DataField>EkBilgi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HastalikAdi">
+          <DataField>HastalikAdi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\alkev\source\repos\FethlerV2\FethlerV2\DataSet1.xsd</rd:SchemaPath>
+        <rd:TableName>DataTable2</rd:TableName>
+        <rd:TableAdapterFillMethod>fillDagitimListesi</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>getDataDagitimListesi</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>DataTable2TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>20.58269cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>12.83257cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle2">
+                          <ReportItems>
+                            <Textbox Name="BolgeAdi3">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!KoyAdi.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.2913cm</Top>
+                              <Left>3.52287cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>5.7191cm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi6">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!MuhtarAdi.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.27964cm</Top>
+                              <Left>3.52287cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>5.7191cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi7">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!MuhtarCepTel.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.79145cm</Top>
+                              <Left>3.52288cm</Left>
+                              <Height>0.47652cm</Height>
+                              <Width>5.7191cm</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi10">
+                              <CanGrow>true</CanGrow>
+                              <UserSort>
+                                <SortExpression>=Fields!KoyNo.Value</SortExpression>
+                              </UserSort>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Count(Fields!KisiNo.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.8031cm</Top>
+                              <Left>3.52287cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>5.71911cm</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Tablix Name="Tablix12">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn>
+                                    <Width>7.19746cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>6.14299cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>6.8715cm</Width>
+                                  </TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.57354cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox85">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Kişi Bilgileri</Value>
+                                                    <Style>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox85</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>Black</Color>
+                                              </BottomBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox89">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>EK BİLGİ</Value>
+                                                    <Style>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox89</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>Black</Color>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox13">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Dağıtım Notu</Value>
+                                                    <Style>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox13</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>Black</Color>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                  <TablixRow>
+                                    <Height>1.94937cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox86">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>="Ad Soyad : " &amp;Fields!KisiAd.Value &amp;" "&amp;Fields!KisiSoyAd.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>times New Roman</FontFamily>
+                                                      <FontSize>11pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>="Yaş          : " &amp; IIf(round(DateDiff(“m”,Fields!DogumTarihi.Value,Now() )/12) &gt;= 100,"" ,round(DateDiff(“m”,Fields!DogumTarihi.Value,Now() )/12))</Value>
+                                                    <Style>
+                                                      <FontFamily>times New Roman</FontFamily>
+                                                      <FontSize>11pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>="TC NO     : " &amp; Fields!TcNo.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>times New Roman</FontFamily>
+                                                      <FontSize>11pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>="Hastalik   : " &amp;Fields!HastalikAdi.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>times New Roman</FontFamily>
+                                                      <FontSize>11pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox86</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>Black</Color>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>Black</Color>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>Black</Color>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="EkBilgi">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>EkBilgi</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>Black</Color>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>Black</Color>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>Black</Color>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox14">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Fields!EkBilgi.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>times New Roman</FontFamily>
+                                                      <FontSize>12pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>Black</Color>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>Black</Color>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>Black</Color>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy>
+                                <TablixMembers>
+                                  <TablixMember />
+                                  <TablixMember />
+                                  <TablixMember />
+                                </TablixMembers>
+                              </TablixColumnHierarchy>
+                              <TablixRowHierarchy>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <KeepWithGroup>After</KeepWithGroup>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <Group Name="Details1" />
+                                    <TablixMembers>
+                                      <TablixMember />
+                                    </TablixMembers>
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixRowHierarchy>
+                              <DataSetName>DataSet1</DataSetName>
+                              <Top>3.53851cm</Top>
+                              <Left>0.37073cm</Left>
+                              <Height>2.52291cm</Height>
+                              <Width>20.21195cm</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Tablix>
+                            <Textbox Name="Textbox23">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>0.29131cm</Top>
+                              <Left>3.21039cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>5</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox24">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>0.80312cm</Top>
+                              <Left>3.21039cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>6</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox25">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>1.27965cm</Top>
+                              <Left>3.21038cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>7</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi4">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Köy Adı</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.29131cm</Top>
+                              <Left>0.3707cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>2.83969cm</Width>
+                              <ZIndex>8</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi5">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Kisi Sayisi</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.83839cm</Top>
+                              <Left>0.3707cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>2.83969cm</Width>
+                              <ZIndex>9</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi11">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Muhtar Adı</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.31492cm</Top>
+                              <Left>0.37069cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>2.83969cm</Width>
+                              <ZIndex>10</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi12">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Muhtar Tel</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.79145cm</Top>
+                              <Left>0.37069cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>2.83969cm</Width>
+                              <ZIndex>11</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox29">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>1.82674cm</Top>
+                              <Left>3.21038cm</Left>
+                              <Height>0.44124cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>12</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi13">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!YardimciAdi.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>2.26798cm</Top>
+                              <Left>3.52289cm</Left>
+                              <Height>0.47652cm</Height>
+                              <Width>5.7191cm</Width>
+                              <ZIndex>13</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi14">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Yardimci Adı</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>2.26798cm</Top>
+                              <Left>0.3707cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>2.83969cm</Width>
+                              <ZIndex>14</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox30">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>2.30327cm</Top>
+                              <Left>3.21039cm</Left>
+                              <Height>0.44124cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>15</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi15">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!YardimciTel.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>2.74451cm</Top>
+                              <Left>3.52292cm</Left>
+                              <Height>0.47652cm</Height>
+                              <Width>5.7191cm</Width>
+                              <ZIndex>16</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi16">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Yardimci Tel</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>2.74451cm</Top>
+                              <Left>0.37073cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>2.83969cm</Width>
+                              <ZIndex>17</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox31">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>2.74451cm</Top>
+                              <Left>3.21042cm</Left>
+                              <Height>0.44124cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>18</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi8">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!BolgeAdi.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.25601cm</Top>
+                              <Left>12.73808cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>7.8446cm</Width>
+                              <ZIndex>19</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi9">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!BolgeYardımcısı.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.24435cm</Top>
+                              <Left>12.73808cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>7.8446cm</Width>
+                              <ZIndex>20</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox26">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>0.29128cm</Top>
+                              <Left>12.4609cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>21</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox27">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>0.80309cm</Top>
+                              <Left>12.4609cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>22</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox28">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>1.27962cm</Top>
+                              <Left>12.46089cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>23</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi18">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Bölge Adı</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.25602cm</Top>
+                              <Left>9.27724cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>3.18365cm</Width>
+                              <ZIndex>24</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi19">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Bölge Sorumlusu</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.8031cm</Top>
+                              <Left>9.27724cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>3.18365cm</Width>
+                              <ZIndex>25</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi20">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Bölge Yardımcısı</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.27963cm</Top>
+                              <Left>9.27723cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>3.18366cm</Width>
+                              <ZIndex>26</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi17">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!BolgeSorumlusu.Value)</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>0.76782cm</Top>
+                              <Left>12.73808cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>7.8446cm</Width>
+                              <ZIndex>27</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox32">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>:</Value>
+                                      <Style>
+                                        <FontFamily>times new Roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox12</rd:DefaultName>
+                              <Top>1.93254cm</Top>
+                              <Left>12.46089cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>0.27719cm</Width>
+                              <ZIndex>28</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi21">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Görevli Kişi</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.93255cm</Top>
+                              <Left>9.27723cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>3.18366cm</Width>
+                              <ZIndex>29</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="BolgeAdi22">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>_______________________________</Value>
+                                      <Style>
+                                        <FontFamily>times new roman</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>BolgeAdi</rd:DefaultName>
+                              <Top>1.93255cm</Top>
+                              <Left>12.73808cm</Left>
+                              <Height>0.47653cm</Height>
+                              <Width>7.8446cm</Width>
+                              <ZIndex>30</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <PageBreak>
+                            <BreakLocation>End</BreakLocation>
+                            <ResetPageNumber>true</ResetPageNumber>
+                          </PageBreak>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!KoyNo.Value</GroupExpression>
+                      <GroupExpression>=Fields!BolgeNo.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>0.41452cm</Top>
+            <Left>0.00001cm</Left>
+            <Height>12.83257cm</Height>
+            <Width>20.58269cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>5.21539in</Height>
+        <Style />
+      </Body>
+      <Width>8.10343in</Width>
+      <Page>
+        <PageHeader>
+          <Height>1.97321cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Fetihler Hayır Hizmetleri Vakfı</Value>
+                      <Style>
+                        <FontFamily>times New Roman</FontFamily>
+                        <FontSize>18pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.30578cm</Top>
+              <Left>3.64776cm</Left>
+              <Height>0.62646cm</Height>
+              <Width>12.63354cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>KÖYLER DAĞITIM LİSTESİ</Value>
+                      <Style>
+                        <FontFamily>times New Roman</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontFamily>times New Roman</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.93224cm</Top>
+              <Left>3.64776cm</Left>
+              <Height>0.62646cm</Height>
+              <Width>12.63354cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>2.54cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>99089728-665b-4c05-b63f-5dba8c25b684</rd:ReportID>
+</Report>

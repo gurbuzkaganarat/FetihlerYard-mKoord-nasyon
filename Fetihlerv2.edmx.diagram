@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b088bb5363444d13b9658a44e0aee9bf" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="FetihlerV2Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Araclar" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Bolgeler" Width="1.5" PointX="1.5" PointY="11.875" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Donemler" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Hastaliklar" Width="1.5" PointX="3.75" PointY="15.5" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Kategoriler" Width="1.5" PointX="3.75" PointY="18" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Kisiler" Width="1.5" PointX="6" PointY="2.875" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Koyler" Width="1.5" PointX="3.75" PointY="11.375" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Maaslar" Width="1.5" PointX="3.75" PointY="8.625" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Koyler_tbl_Bolgeler" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Kisiler_tbl_Hastaliklar" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Kisiler_tbl_Kategoriler" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Kisiler_tbl_Koyler" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Kisiler_tbl_Maaslar" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Gorevliler" Width="1.5" PointX="0.75" PointY="4.625" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Araclar_tbl_Gorevliler" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Kisiler_tbl_Gorevliler" />
+        <EntityTypeShape EntityType="FetihlerV2Model.tbl_Erzaklar" Width="1.5" PointX="5" PointY="0.75" />
+        <AssociationConnector Association="FetihlerV2Model.FK_tbl_Erzaklar_tbl_Donemler" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
